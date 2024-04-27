@@ -43,3 +43,4 @@ def news_index(request):
 
     # Render the template with context data
     return render(request, 'news_index.html', context)
+
