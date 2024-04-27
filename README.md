@@ -58,9 +58,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - NewsAPI for providing the news data
 - Bootstrap for the responsive design
+- PLP Africa
 
 ## Contact
 
-For inquiries, suggestions, or issues, please contact [Your Name] at [your_email@example.com].
+For inquiries, suggestions, or issues, please contactME @ -Duke Maosa - [@TheDukeroyalty](https://github.com/TheDukeroyalty
 
 ---
