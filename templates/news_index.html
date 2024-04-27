@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="description"/>
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+
+    <style type="text/css">.body { width: auto; }</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css"/>
+
+    <title>My News API</title>
+</head>
+<body>
+
+    <h1>The Whimsical Chronicles: Your World Unveiled!</h1>
+
+    <p>&copy; maosaDuke;</p>
+
+    <div id="latest-news">
+        {% for news in latest_news %}
+            <div class="news-item">
+                <h2>{{ news.headline }}</h2>
+                <p>Source: {{ news.source }}</p>
+                <p>Brief me: {{ news.description }}</p>
+                <p><a href="{{ news.url }}">Read more</a></p>
+            </div>
+        {% endfor %}
+    </div>
+ 
+
+  <div class="random">
+    <h2>Welcome to Random Facts and Images</h2>
+    <h3>Random Repo</h3>
+    <p>{{ events }}</p>
+
+    <h3>Are You Bored?</h3>
+    <p>{{ activity }}</p>
+
+      <h3>Random Dog Breed</h3>
+      <img src="{{ dog }}" alt="myrandom-dog">
+
+      <p>All rights reserved&copy;</p>
+  </div
+</body>
+</html>

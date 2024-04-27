@@ -1,9 +1,10 @@
 from django.contrib import admin
 from django.urls import path
-from . import views
+from django.shortcuts import render
+from .views import news_index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),  # URL pattern for the main page
-    path('dogs/', views.dogs, name='dogs'),  # URL pattern for the dogs page
+    path('', news_index, name='news_index'),
+    
 ]
