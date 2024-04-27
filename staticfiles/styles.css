@@ -7,7 +7,7 @@ body, h1, p {
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #09252f;
+    background-color: #e1e4e5;
     color: #333;
     line-height: 1.6;
 }
@@ -15,7 +15,7 @@ body {
 /* Container styles */
 .container {
     max-width: 800px;
-    margin: 10 auto;
+    margin: 0 auto;
     padding: 20px;
     text-align:"center";
 }
@@ -74,7 +74,7 @@ h1 {
 .random img {
     max-width: 100%;
     height: auto;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 /* Footer styles */

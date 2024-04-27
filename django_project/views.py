@@ -2,11 +2,10 @@ from django.shortcuts import render
 import requests
 from newsapi import NewsApiClient
 
-def news_index(request):
-    # Initialize NewsApiClient with your API key
-    newsapi = NewsApiClient(
-
-   api_key='42c6eaee15e644f0879f7f1274b479c2') # Fetch top headlines
+def news_index(request):   
+  # Initialize NewsApiClient with your API key
+    newsapi = NewsApiClient(api_key=
+      '42c6eaee15e644f0879f7f1274b479c2') # Fetch top headlines
     top_headlines = newsapi.get_top_headlines(language='en', page_size=5)
 
     # Extract relevant news data
